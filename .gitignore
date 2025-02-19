@@ -20,3 +20,5 @@ venv/
 *.spec
 .last_gui_params.txt
 .DS_Store
+.vscode/*
+.idea/*
