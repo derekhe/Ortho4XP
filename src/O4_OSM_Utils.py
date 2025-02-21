@@ -10,12 +10,14 @@ import O4_UI_Utils as UI
 import O4_File_Names as FNAMES
 
 overpass_servers = {
-    "DE": "https://overpass-api.de/api/interpreter",
-    "KU": "https://overpass.kumi.systems/api/interpreter",
-    "RU": "https://overpass.openstreetmap.ru/api/interpreter",
+    "Main Overpass API instance": "https://overpass-api.de/api/interpreter",
+    "VK Maps Overpass API instance": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "Private.coffee Overpass Instance": "https://overpass.private.coffee/api/interpreter",
+    "Russian Overpass API instance": "https://overpass.openstreetmap.ru/api/interpreter",
+    "Japan Overpass API instance": "https://overpass.osm.jp/api/interpreter"
 }
 # KU server does not rate limit as of 2024-07-08
-overpass_server_choice = "KU"
+overpass_server_choice = "VK Maps Overpass API instance"
 max_osm_tentatives = 8
 
 ################################################################################
