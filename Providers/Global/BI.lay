@@ -1,4 +1,4 @@
 grid_type=webmercator
-url_template=http://r{switch:0,1,2,3}.ortho.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=136
+url_template=https://t.ssl.ak.dynamic.tiles.virtualearth.net/comp/ch/{quadkey}?mkt=en-US&it=A&shading=t&n=z&og=1722
 imagery_dir=grouped
 max_threads=200
