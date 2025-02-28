@@ -81,7 +81,6 @@ if __name__ == '__main__':
             MASK.build_masks(tile)
             TILE.build_tile(tile)
             print("Bon vol!")
-            sys.exit(0)
         except:
             print("Crash!")
             sys.exit(1)
