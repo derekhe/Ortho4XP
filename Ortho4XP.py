@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import os
+
 Ortho4XP_dir='..' if getattr(sys,'frozen',False) else '.'
 sys.path.append(os.path.join(Ortho4XP_dir,'src'))
 
@@ -13,6 +14,7 @@ import O4_Mask_Utils as MASK
 import O4_Tile_Utils as TILE
 import O4_GUI_Utils as GUI
 import O4_Config_Utils as CFG  # CFG imported last because it can modify other modules variables
+import O4_Overlay_Utils as OVL
 
 cmd_line="USAGE: Ortho4XP.py lat lon imagery zl [custom_build_dir] (won't read a tile config)\n  OR:  Ortho4XP.py lat lon [custom_build_dir] (with existing tile config file)"
 
@@ -80,6 +82,7 @@ if __name__ == '__main__':
             MESH.build_mesh(tile)
             MASK.build_masks(tile)
             TILE.build_tile(tile)
+            OVL.build_overlay(lat, lon)
             print("Bon vol!")
         except:
             print("Crash!")
