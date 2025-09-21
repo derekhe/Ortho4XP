@@ -22,6 +22,6 @@ venv/
 .DS_Store
 .vscode/*
 .idea/*
-Ortho4XP.cfg
+#Ortho4XP.cfg
 Merged/
 yOrtho4XP_Overlays/
